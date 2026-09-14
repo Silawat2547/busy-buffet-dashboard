@@ -30,7 +30,6 @@ st.sidebar.caption('Data Analyst Test')
 page = st.sidebar.radio('เลือกส่วนที่ต้องการอ่าน', ['ภาพรวม', 'Task 1 · ตรวจ Comment พนักงาน', 'Task 2 · ประเมินทางเลือก', 'Task 3 · ข้อเสนอแนะนำ', 'ข้อมูลและวิธีวิเคราะห์'])
 st.sidebar.divider()
 st.sidebar.caption('วิเคราะห์ 5 วันที่มีข้อมูล\n\nหน่วยหลัก = กลุ่มลูกค้า ไม่ใช่จำนวนคน\n\nInhouse = แขกโรงแรม\nWalkin = ลูกค้าภายนอก')
-st.sidebar.info('ผลจำลองเป็นสมมติฐานสำหรับตัดสินใจทดลอง ไม่ใช่ผลลัพธ์ที่เกิดขึ้นจริง')
 st.title(page if page != 'ภาพรวม' else 'Busy Buffet: คิวแน่นเกิดจากอะไร?')
 
 if page == 'ภาพรวม':
@@ -150,4 +149,4 @@ else:
         st.download_button(label,(Path(__file__).parent/'downloads'/name).read_bytes(),name,'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
 
 st.divider()
-st.caption('Busy Buffet · Data Analyst Test | ข้อสรุปจำกัดตามข้อมูลที่มี ไม่ถือว่าความสัมพันธ์เป็นหลักฐานยืนยันเหตุและผล')
+st.caption('Busy Buffet · Data Analyst Test | ข้อสรุปจำกัดตามข้อมูลที่มีเท่านั้น')
