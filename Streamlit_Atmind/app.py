@@ -7,8 +7,8 @@ from analysis import load_data, cap_model, daily_summary, queue_profile
 st.set_page_config(page_title='Busy Buffet | Data Analyst Test', page_icon='🍽️', layout='wide')
 st.markdown('''<style>
 .block-container{max-width:1240px;padding-top:2rem;padding-bottom:3rem}
-h1,h2,h3{color:#14334B} [data-testid="stMetric"]{background:#F0F6F8;padding:16px;border-radius:12px}
-[data-testid="stSidebar"]{background:#EDF3F6} .stCaption{line-height:1.7}
+[data-testid="stMetric"]{border:1px solid rgba(128,128,128,.35);padding:16px;border-radius:12px}
+.stCaption{line-height:1.7}
 </style>''', unsafe_allow_html=True)
 df = load_data()
 COLORS = {'Inhouse': '#217D8B', 'Walkin': '#DB8B37'}
