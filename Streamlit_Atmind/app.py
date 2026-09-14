@@ -27,7 +27,7 @@ def table(frame):
 
 st.sidebar.title('🍽️ Busy Buffet')
 st.sidebar.caption('Data Analyst Test · Amber 85')
-page = st.sidebar.radio('เลือกส่วนที่ต้องการอ่าน', ['ภาพรวม', 'Task 1 · ตรวจข้อกล่าวอ้าง', 'Task 2 · ประเมินทางเลือก', 'Task 3 · ข้อเสนอทดลอง', 'ข้อมูลและวิธีวิเคราะห์'])
+page = st.sidebar.radio('เลือกส่วนที่ต้องการอ่าน', ['ภาพรวม', 'Task 1 · ตรวจ Comment พนักงาน', 'Task 2 · ประเมินทางเลือก', 'Task 3 · ข้อเสนอแนะนำ', 'ข้อมูลและวิธีวิเคราะห์'])
 st.sidebar.divider()
 st.sidebar.caption('วิเคราะห์ 5 วันที่มีข้อมูล\n\nหน่วยหลัก = กลุ่มลูกค้า ไม่ใช่จำนวนคน\n\nInhouse = แขกโรงแรม\nWalkin = ลูกค้าภายนอก')
 st.sidebar.info('ผลจำลองเป็นสมมติฐานสำหรับตัดสินใจทดลอง ไม่ใช่ผลลัพธ์ที่เกิดขึ้นจริง')
